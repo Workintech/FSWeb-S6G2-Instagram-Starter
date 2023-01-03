@@ -1,8 +1,8 @@
-import React from 'react';
-import Yorum from './Yorum';
-import './Yorumlar.css';
+import React from "react";
+import Yorum from "./Yorum";
+import "./Yorumlar.css";
 
-const Yorumlar = props => {
+const Yorumlar = (props) => {
   // 🔥 Bu bileşenin parentının aşağıdaki propları düzgün gönderdiğinden emin olun.
   const { yorumlar } = props;
 
