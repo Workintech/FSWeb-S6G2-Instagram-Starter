@@ -1,29 +1,34 @@
-import React from 'react';
-import Yorumlar from '../Yorumlar/Yorumlar';
-import BeğenBölümü from './BeğenBölümü';
-import GönderiBaşlığı from './GönderiBaşlığı';
+import React, { useState } from "react";
+import Yorumlar from "../Yorumlar/Yorumlar";
+import BeğenBölümü from "./BeğenBölümü";
+import GönderiBaşlığı from "./GönderiBaşlığı";
 
-const Gönderi = props => {
+const Gönderi = (props) => {
   // 🔥 Bu bileşenin parentının aşağıdaki propları düzgün gönderdiğinden emin olun.
-  const { gönderi, gonderiyiBegen } = props;
-
+  const { gönderi, gonderiyiBegen, yorumEkle } = props;
   return (
-    <div className='post-border'>
+    <div className="post-border">
       <GönderiBaşlığı
         username={gönderi.username}
         thumbnailUrl={gönderi.thumbnailUrl}
       />
-      <div className='post-image-wrapper'>
+      <div className="post-image-wrapper">
         <img
-          alt='post thumbnail'
-          className='post-image'
+          alt="post thumbnail"
+          className="post-image"
           src={gönderi.imageUrl}
         />
       </div>
       {/* BeğenBölümü düzgün çalışması için ihtiyaç duyduğu tüm proplara sahip mi? */}
-      <BeğenBölümü gonderiyiBegen={() => gonderiyiBegen(gönderi.id)}/>
+      <BeğenBölümü
+        begeniSayisi={gönderi.likes}
+        gonderiyiBegen={() => gonderiyiBegen(gönderi.id)}
+      />
       {/* Yorumlar da proplara dikkat istiyor! */}
-      <Yorumlar />
+      <Yorumlar
+        yorumlar={gönderi.comments}
+        yorumEkle={(yorumText) => yorumEkle(gönderi.id, yorumText)}
+      />
     </div>
   );
 };
