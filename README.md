@@ -17,12 +17,11 @@ Bu proje, create-react-app (CRA) kullanılarak oluşturuldu. Bu projenin çalı�
 - [ ]  Projeyi forklayarak bir kopyasını oluşturun.
 - [ ]  Terminalden klonlayın
 - [ ]  Projenin ana dizinine gidin
-- [ ]  `npm install --no-audit` komutuyla bağımlılıkları indirin
-Eğer kurulumda hata alırsanız, v16.20.0'a [bütün sisteminize sıfırdan yükleme yaparak](https://nodejs.org/en/blog/release/v16.20.0) veya [NVM - "Node Version Manager"](https://github.com/nvm-sh/nvm) kullanarak node versiyonunuzu geri çekmenizi tavsiye ederiz. Bunu kullanırken NVM metodunda biraz zorlanmanız normaldir. Yine de yapabilirseniz, geliştirme ortamı kurulumunda, kariyerinizde karşılaşabileceğiniz en zor adımlardan birini tamamlamış olacaksınız.
+- [ ]  `npm install` komutuyla bağımlılıkları indirin (Tavsiye edilen NPM version: 18)
 - [ ]  `npm start` ile çalıştırın
 - [ ]  Push commits: git push origin `main`.
 
-### Görev 2a: MUÜ
+### Görev 2a
 
 - [ ]  Bu uygulama, bu proje için gereken iki ana bölüme ayrılabilir: Arama Çubuğu ve Gönderiler.
 - [ ]  Bu projeyi tamamlamak için, sayfanın üst kısmında oluşturulan Arama Çubuğunun tek bir örneğinin yanı sıra `sahte-veri.js` dizisindeki her nesne için ayrı bir gönderi oluşturan bir Gönderi bileşeni olacaktır.
@@ -32,7 +31,7 @@ Eğer kurulumda hata alırsanız, v16.20.0'a [bütün sisteminize sıfırdan yü
 
 ---
 
-Projenin son görüntüsü şu şekilde olmalıdır: [bu](/project-output.png)
+Projenin son görüntüsü görseldeki gibi olmalıdır: [görsel için tıklayın](/project-output.png)
 
 ### Görev 3: Ek Görevler
 
