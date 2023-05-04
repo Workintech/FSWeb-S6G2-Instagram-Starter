@@ -23,6 +23,13 @@ Bu proje, create-react-app (CRA) kullanılarak oluşturuldu. Bu projenin çalı�
 
 ### Görev 2a
 
+İş akış mantığı (bussiness logic) için linkteki diagramı inceleyin [Component ve Data Akış Diagramı](https://www.figma.com/file/RrbOO8oXYz1a3bhSKNvJ9D/S6G2-0323?node-id=0%3A1&t=0H0rwzIyCbz0CE8F-1). 
+Bu diagram uygulamadaki componentler arasındaki ilişki göstermektedir. Ayrıca componentlerdeki veri iletişimi de detaylı 
+olarak görselleştirilmiştir. Elinizdeki veri hangi componentten hangi componente yönlendirilmeli veya methodlar hangi 
+component içinde tanımlanıp, hangi componente prop olarak aktarılmalı gibi soruların cevaplarını bulabilirsiniz.
+Lütfen diagramı okumaya başlamadan önce, diagramdaki nesnelerin ne anlama geldiğini ifade eden tabloyu (yine 
+diagram içinde sol tarafta) inceleyiniz.  
+
 - [ ]  Bu uygulama, bu proje için gereken iki ana bölüme ayrılabilir: Arama Çubuğu ve Gönderiler.
 - [ ]  Bu projeyi tamamlamak için, sayfanın üst kısmında oluşturulan Arama Çubuğunun tek bir örneğinin yanı sıra `sahte-veri.js` dizisindeki her nesne için ayrı bir gönderi oluşturan bir Gönderi bileşeni olacaktır.
 - [ ]  Gönderileri takip etmek ve stateleri belirlemek için dün öğrendiklerinizi kullanın.
